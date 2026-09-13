@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | Архив времени</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+    :root { --ink:#202329; --muted:#69717b; --paper:#f1eee8; --white:#fffdf8; --blue:#315b73; --red:#a54b3c; --gold:#c9994c; --line:#d9d4ca; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:Manrope,sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    .hero { min-height:510px; padding:30px 5vw 70px; color:#f8f3eb; position:relative; overflow:hidden; background:linear-gradient(120deg,rgba(27,37,47,.98),rgba(49,91,115,.91) 58%,rgba(166,75,60,.7)), linear-gradient(145deg,#1c2f40,#b9674b); }
+    .hero:after { content:'СВЯЗЬ'; position:absolute; right:-25px; bottom:-20px; color:rgba(255,255,255,.07); font:700 clamp(100px,17vw,230px)/.8 'Playfair Display',serif; letter-spacing:-.09em; transform:rotate(-8deg); }
+    .topbar,.hero-copy,main { max-width:1320px; margin-left:auto; margin-right:auto; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; position:relative; z-index:1; }
+    .brand { font-size:12px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
+    .mark { color:#e1b86e; font-size:22px; margin-right:8px; }
+    nav { display:flex; gap:28px; color:#e1e5e4; font-size:13px; }
+    nav a:hover { color:#fff; }
+    .hero-copy { margin-top:125px; position:relative; z-index:1; }
+    .eyebrow { color:#e3b66c; font-size:12px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+    h1,h2,h3 { font-family:'Playfair Display',Georgia,serif; }
+    h1 { max-width:750px; margin:18px 0; font-size:clamp(48px,7vw,92px); line-height:.96; letter-spacing:-.04em; }
+    .hero-copy p { max-width:550px; color:#dde3e3; font-size:17px; line-height:1.7; }
+    main { padding:95px 5vw 110px; }
+    .contact-layout { display:grid; grid-template-columns:1fr 1.3fr; gap:110px; align-items:start; }
+    h2 { margin:10px 0 20px; font-size:clamp(38px,5vw,58px); line-height:1.05; letter-spacing:-.04em; }
+    .about-text { color:var(--muted); font-size:16px; line-height:1.8; }
+    .contact-list { margin:36px 0 0; padding:0; list-style:none; }
+    .contact-list li { padding:16px 0; border-bottom:1px solid var(--line); }
+    .contact-label { display:block; margin-bottom:5px; color:var(--gold); font-size:10px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; }
+    .contact-list a { color:var(--blue); font-size:18px; font-weight:600; }
+    .contact-list a:hover { color:var(--red); }
+    .contact-form { padding:34px; background:var(--white); border-top:3px solid var(--red); box-shadow:0 18px 40px rgba(42,49,55,.08); }
+    .contact-form h3 { margin:0 0 24px; font-size:29px; }
+    label { display:block; margin:16px 0 7px; color:var(--muted); font-size:12px; font-weight:700; }
+    input,textarea { width:100%; padding:13px 14px; border:1px solid var(--line); border-radius:2px; outline:none; color:var(--ink); background:#fff; font:14px Manrope; }
+    input:focus,textarea:focus { border-color:var(--blue); box-shadow:0 0 0 3px rgba(49,91,115,.1); }
+    textarea { min-height:125px; resize:vertical; }
+    button { margin-top:20px; padding:13px 20px; border:0; border-radius:2px; color:#fff; background:var(--red); cursor:pointer; font:700 12px Manrope; letter-spacing:.07em; text-transform:uppercase; }
+    button:hover { background:var(--blue); }
+    .form-status { min-height:20px; margin:14px 0 0; color:var(--blue); font-size:13px; }
+    footer { display:flex; justify-content:space-between; padding:30px 5vw; color:#a5a9ab; background:#202329; font-size:11px; letter-spacing:.08em; text-transform:uppercase; }
+    footer a { color:#e2b76f; }
+    @media (max-width:760px) { .hero { min-height:500px; padding:20px 7vw 50px; } nav { gap:14px; font-size:11px; } .hero-copy { margin-top:110px; } main { padding:65px 7vw 75px; } .contact-layout { grid-template-columns:1fr; gap:55px; } .contact-form { padding:25px; } footer { display:block; line-height:2.2; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="topbar"><a class="brand" href="Untitled-1.html"><span class="mark">✦</span>Архив времени</a><nav><a href="Untitled-1.html">Вся история</a><a href="modern-history.html">Современность</a><a href="#contact">Контакты</a></nav></div>
+    <div class="hero-copy"><div class="eyebrow">04 / Связь с проектом</div><h1>Давайте говорить об истории.</h1><p>Есть уточнение, идея для нового материала или желание поделиться семейной историей? Напишите автору проекта.</p></div>
+  </header>
+  <main id="contact">
+    <div class="contact-layout">
+      <section><div class="eyebrow">Контактная информация</div><h2>Архив открыт для диалога.</h2><p class="about-text">«Архив времени» — образовательный проект о людях, событиях и решениях, которые формируют историческую память. От себя добавлю: особенно ценны письма с локальными историями, воспоминаниями родственников и ссылками на проверенные источники.</p>
+        <ul class="contact-list"><li><span class="contact-label">Телефон</span><a href="tel:+79243999520">8 924 399-95-20</a></li><li><span class="contact-label">Электронная почта</span><a href="mailto:kadirovr986@gmail.com">kadirovr986@gmail.com</a></li><li><span class="contact-label">Время ответа</span><span>Пн–Пт, 10:00–18:00</span></li></ul>
+      </section>
+      <section class="contact-form"><h3>Написать сообщение</h3><form id="message-form"><label for="name">Ваше имя</label><input id="name" name="name" type="text" placeholder="Как к вам обращаться" required><label for="email">Email</label><input id="email" name="email" type="email" placeholder="name@example.com" required><label for="message">Сообщение</label><textarea id="message" name="message" placeholder="Расскажите, чем хотите поделиться" required></textarea><button type="submit">Подготовить письмо</button><p class="form-status" id="form-status" aria-live="polite"></p></form></section>
+    </div>
+  </main>
+  <footer><a href="Untitled-1.html">← Вернуться к общей истории</a><a href="modern-history.html">Современность</a><span>© 2026 Архив времени</span><span>Образовательный проект</span></footer>
+  <script>
+    document.getElementById('message-form').addEventListener('submit', event => {
+      event.preventDefault();
+      document.getElementById('form-status').textContent = 'Спасибо! Откройте почту, чтобы отправить подготовленное сообщение.';
+    });
+  </script>
+</body>
+</html>
